@@ -1,5 +1,5 @@
 <?php
-include "../sistema/conexion.php";
+include "../Admin/conexion.php";
 
     if(!empty($_POST))
     {
@@ -42,7 +42,7 @@ include "../sistema/conexion.php";
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="/sistema/css/style.css">
+    <link rel="stylesheet" href="../Admin/css/style.css">
     <?php include "includes/scripts.php"; ?>
 	<title>Registro Usuario</title>
 </head>

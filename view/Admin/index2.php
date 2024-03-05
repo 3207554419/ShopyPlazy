@@ -4,7 +4,7 @@ $alert = "";
 session_start();
 
 if (!empty($_SESSION['active'])) {
-    header('location: sistema/');
+    header('location: Admin/');
 } else {
 
     if (!empty($_POST)) {
@@ -12,7 +12,7 @@ if (!empty($_SESSION['active'])) {
             $alert = 'Ingrese su usuario y su clave';
         } else {
 
-            require_once "../sistema/conexion.php";
+            require_once "../Admin/conexion.php";
 
             $user = mysqli_real_escape_string($conection, $_POST['usuario']);
             $pass = md5(mysqli_real_escape_string($conection, $_POST['clave']));
@@ -36,7 +36,7 @@ if (!empty($_SESSION['active'])) {
                 $_SESSION['email'] = $data['Correo'];
                 $_SESSION['password'] = $data['Clave'];
 
-                header('location: sistema/');
+                header('location: Admin/');
             } else {
                 $alert = 'El usuario o la clave son incorrectos';
                 session_destroy();
@@ -50,7 +50,7 @@ if (!empty($_SESSION['active'])) {
 <!DOCTYPE html>
 <html lang="en">
 <link rel="icon" href="../img/logo.png" type="image/png">
-<link rel="stylesheet" href="/sistema/css/style.css">
+<link rel="stylesheet" href="../Admin/css/style.css">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,7 +70,7 @@ if (!empty($_SESSION['active'])) {
             <input type="password" name="clave" placeholder="Contraseña">
             <div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
             <input type="submit" value="Ingresar">
-            <center><a href="../interfaz_usuario/iniciar_sesion.php">Cancelar</a></center>
+            <center><a href="#">Cancelar</a></center>
            
         </form>
 

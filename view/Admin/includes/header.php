@@ -16,8 +16,8 @@
 				<p>Colombia, <?php echo fechaC(); ?></p>
 				<span>|</span>
 				<span class="user"><?php echo $_SESSION['user']; ?></span>
-				<img class="photouser" src="../../sistema/img/usuario.png" alt="Usuario">
-				<a href="../../sistema/salir.php"><img class="close" src="../../sistema/img/salir.png" alt="Salir del sistema" title="Salir"></a>
+				<img class="photouser" src="../img/usuario.png" alt="Usuario">
+				<a href="../../Admin/salir.php"><img class="close" src="../../Admin/salir.php" alt="Salir del sistema" title="Salir"></a>
 			</div>
 		</div>
         <?php include "nav.php"; ?>

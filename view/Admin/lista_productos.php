@@ -1,5 +1,5 @@
 <?php
-include "../sistema/conexion.php";
+include "../Admin/conexion.php";
 
 // Consulta para obtener la lista de productos
 $query = mysqli_query($conection, "SELECT * FROM productos");
@@ -22,7 +22,7 @@ $productos = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
         <div class="formregister">
             <h1>Lista de Productos</h1>
-            <a href="../sistema/registro_producto.php" class="btn_new">Crear Producto</a>
+            <a href="../../view/Admin/lista_productos.php" class="btn_new">Crear Producto</a>
             <table>
                 <thead>
                     <tr>

@@ -1,12 +1,12 @@
 <?php 
-    include "../sistema/conexion.php"
+    include "../Admin/conexion.php"
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="/sistema/css/style.css">
+    <link rel="stylesheet" href="../Admin/css/style.css">
     <?php include "includes/scripts.php"; ?>
 	<title>Lista de usuarios</title>
 </head>
@@ -16,7 +16,7 @@
 	<section id="container">
 		
     <h1>Lista de Usuarios</h1>
-    <a href="registro_usuario.php" class="btn_new">Crear usuario</a>
+    <a href="../../view/Admin/registro_usuario.php" class="btn_new">Crear usuario</a>
 
     <form action="buscar_usuario.php" method="get" class="form_search">
        <input type="text" name="busqueda" id="busqueda" placeholder="Buscar"> 
