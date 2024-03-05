@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../public/css/">
+  <link rel="stylesheet" href="../public/css/styles1.css">
   <link rel="icon" href="../img/logo.png" type="image/png">
   <title>Shpy  l Iniciar Sesión</title>
 </head>
@@ -13,19 +13,19 @@
 
   <div class="login-container">
     <div class="login-image">
-      <img src="../img/iniciosesionnnn.jpg">
+      <img src="../public/img/iniciosesionnnn.jpg">
     </div>
     <div class="login-form">
       <div class="close-button">
         <a href="/interfaz_usuario/index.php"><img src="../img/cerrar X.png" alt=""></a>
       </div>
       <div class="logo-and-title">
-        <img src="../img/logo.png" alt="">
+        <img src="../public/img/logo.png" alt="">
         <h2>Iniciar Sesión</h2>
       </div>
       <form class="form_iniciar_sesion">
         <div class="form-group">
-          <img src="../img/usuario img.png" alt="">
+          <img src="../public/img/usuario img.png" alt="">
           <input type="text" placeholder="Nombre Usuario" />
         </div>
         <div class="form-group">
