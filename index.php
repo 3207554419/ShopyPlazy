@@ -101,7 +101,7 @@
 
   <main id="main">
     <div class="container">
-      <center>
+      <!-- <center>
         <h2>Categorias</h2>
       </center>
       <br><br><br>
@@ -113,7 +113,7 @@
           <div class="box box-4" style="background-image: url('https://i.pinimg.com/736x/79/27/fc/7927fc1fcfe745bd1ef535c063584170.jpg');" data-text="Vestidos de noche"></div>
           <div class="box box-5" style="background-image: url('https://i.pinimg.com/736x/89/7d/19/897d199589f88c469c820d8fb7b47aa8.jpg');" data-text="Pantalones"></div>
         </div>
-      </center>
+      </center> -->
 
       <section id="ropa-main">
         <div class="row">

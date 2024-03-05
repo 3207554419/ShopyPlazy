@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../public/css/styles1.css">
-  <link rel="icon" href="../img/logo.png" type="image/png">
+  <link rel="icon" href="../public/img/logo.png" type="image/png">
   <title>Shpy  l Iniciar Sesión</title>
 </head>
 
@@ -29,7 +29,7 @@
           <input type="text" placeholder="Nombre Usuario" />
         </div>
         <div class="form-group">
-          <img src="../img/candado.png" alt="">
+          <img src="../public/img/candado.png" alt="">
           <input type="password" placeholder="Contraseña" />
         </div>
         <div class="ingresar-link">
@@ -42,7 +42,7 @@
         <button class="boton_iniciar_sesion" type="submit"><a href="../interfaz_usuario/index.php"></a> Iniciar Sesión</button>
       </form>
       <div class="register-link">
-        <a href="../interfaz_usuario/registrar_usuario.php">Registrarse</a>
+        <a href="../view/registro_usuario.php ">Registrarse</a>
       </div>
 
     </div>
