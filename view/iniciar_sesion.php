@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../public/css/">
   <link rel="icon" href="../img/logo.png" type="image/png">
-  <title>Iniciar Sesión</title>
+  <title>Shpy  l Iniciar Sesión</title>
 </head>
 
 <body class="body_iniciar_sesion">
