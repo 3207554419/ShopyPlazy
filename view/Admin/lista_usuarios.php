@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="../Admin/css/style.css">
+    <link rel="stylesheet" href="../Admin/css/style1.css">
     <?php include "includes/scripts.php"; ?>
 	<title>Lista de usuarios</title>
 </head>
@@ -16,7 +16,7 @@
 	<section id="container">
 		
     <h1>Lista de Usuarios</h1>
-    <a href="../../view/Admin/registro_usuario.php" class="btn_new">Crear usuario</a>
+    <a href="../Admin/registro_usuario.php" class="btn_new">Crear usuario</a>
 
     <form action="buscar_usuario.php" method="get" class="form_search">
        <input type="text" name="busqueda" id="busqueda" placeholder="Buscar"> 
