@@ -1,5 +1,5 @@
 <?php 
-    include "../Admin/conexion.php"
+    include "../sistema/conexion.php"
 ?>
 
 <!DOCTYPE html>
@@ -12,26 +12,14 @@
 </head>
 <body>
 
-
-
-<?php include "includes/header.php"; ?>
-
+    <?php include "includes/header.php"; ?>
 	<section id="container">
-
-        <?php
-           $busqueda = strtolower($_REQUEST['busqueda']);
-           if(empty($busqueda))
-           {
-            header("location: lista_usuarios.php ");
-           }
-
-        ?> 
 		
     <h1>Lista de Usuarios</h1>
     <a href="registro_usuario.php" class="btn_new">Crear usuario</a>
 
     <form action="buscar_usuario.php" method="get" class="form_search">
-       <input type="text" name="busqueda" id="busqueda" placeholder="Buscar" value=<?php echo $busqueda ?>> 
+       <input type="text" name="busqueda" id="busqueda" placeholder="Buscar"> 
        <input type="submit" value="Buscar" class="btn_search">
     </form>
 
@@ -47,35 +35,9 @@
 
         <?php 
            //paginador 
-
-           $rol = '';
-           if($busqueda == 'administrador')
-           {
-            $rol = " OR rol LIKE '%1%' ";
-
-           }else if($busqueda == 'supervisores'){
-
-            $rol = " OR rol LIKE '%2%' ";
-
-           }else if($busqueda == 'vendedor'){
-
-            $rol = " OR rol LIKE '%3%' ";
-           }
-
-
-
-
-           $sql_registe = mysqli_query($conection, "SELECT COUNT(*) AS total_registro FROM usuarios 
-                                                               WHERE ( idUsuario LIKE '%$busqueda%' OR 
-                                                               nombre LIKE '%$busqueda%' OR 
-                                                               correo LIKE '%$busqueda%' OR 
-                                                               usuario LIKE '%$busqueda%' 
-                                                               $rol ) 
-                                                               AND estatus = 1");
-
-
+           $sql_registe = mysqli_query($conection, "SELECT COUNT(*) AS total_registro FROM usuarios WHERE estatus = 1;");
            $result_register = mysqli_fetch_array($sql_registe);
-
+        
            $total_registro = $result_register['total_registro'];
 
            $por_pagina = 6;
@@ -93,8 +55,9 @@
 
 
 
-            $query = mysqli_query($conection, "SELECT u.idusuario, u.nombre, u.correo, u.usuario, r.rol FROM usuarios u INNER JOIN roles r ON u.rol = r.IdRol WHERE( u.idUsuario LIKE '%$busqueda%' OR u.nombre LIKE u.correo LIKE '%$busqueda%' OR u.usuario LIKE '%$busqueda%' OR r.rol LIKE '%$busqueda%')  AND estatus = 1 LIMIT $desde,$por_pagina");
+            $query = mysqli_query($conection, "SELECT u.idusuario, u.nombre, u.correo, u.usuario, r.rol FROM usuarios u INNER JOIN roles r ON u.rol = r.IdRol WHERE estatus = 1 LIMIT $desde,$por_pagina;");
 
+            mysqli_close($conection);
 
             $result = mysqli_num_rows($query);
             if ($result > 0) {
@@ -152,7 +115,6 @@
            
             <li><a href="?pagina=<?php echo $pagina+1; ?>">>></a></li>
             <li><a href="?pagina=<?php echo $total_paginas; ?>">>|</a></li>
-
         <?php
                 }
         ?>
@@ -162,8 +124,6 @@
 
 
 	</section>
-
     <?php include "includes/footer.php"; ?>  
-
 </body>
 </html>

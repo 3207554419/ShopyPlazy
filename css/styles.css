@@ -253,6 +253,7 @@ img.carrusel_img {
   text-align: center;
   color: #fff;
   width: 70%;
+  /* Ajusta el ancho según tus necesidades */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -270,41 +271,33 @@ img.carrusel_img {
 }
 
 
+
+
 .body_iniciar_sesion {
-  margin-top: 50px;
+  margin: 0;
+  padding: 0;
   background-color: #f0f0f0;
+  /* Color de fondo */
 }
 
 .login-container {
   width: 80%;
-  margin: 0 auto;
+  margin: 10% auto;
+  /* Alinea en el centro */
   display: flex;
 }
-
-
-
 
 .login-image {
   flex: 7;
   background-color: #D9D9D9;
-  height: 850px;
-
+  /* Color de fondo de la imagen */
 }
-
-.login-image img{
-  width: 1040px;
-  height: 850px;
-  display: block;
-  max-width: 100%;
-
-}
-
 
 .login-form {
   flex: 3;
   padding: 20px;
   background-color: #ffffff;
-  
+  /* Color de fondo del formulario */
 }
 
 .close-button {
@@ -344,7 +337,7 @@ img.carrusel_img {
   width: calc(100% - 40px);
   padding: 10px;
   box-sizing: border-box;
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 .forgot-password {
@@ -394,6 +387,7 @@ img.carrusel_img {
 .close-button img {
   height: 28px;
   width: 29px;
+  
 }
 
 .form_iniciar_sesion img {
@@ -409,37 +403,30 @@ img.carrusel_img {
 }
 
 .body_registrar_usuario {
-  margin-top: 50px;
+  margin: 0;
+  padding: 0;
   background-color: #f0f0f0;
- 
+  /* Color de fondo */
 }
 
 .register-container {
   width: 80%;
-  margin: 0 auto;
+  margin: 10% auto;
+  /* Alinea en el centro */
   display: flex;
 }
 
-
 .register-image {
-  flex: 5;
+  flex: 1;
   background-color: #D9D9D9;
-  height: 850px;
+  /* Color de fondo de la imagen */
 }
-
-.register-image img{
-  width: 1040px;
-  height: 850px;
-  display: block;
-  max-width: 100%;
-}
-
-
 
 .register-form {
   flex: 1;
   padding: 20px;
   background-color: #ffffff;
+  /* Color de fondo del formulario */
 }
 
 .form-logo {
@@ -472,21 +459,43 @@ img.carrusel_img {
 
 
 .boton_cancelar {
+  text-decoration: none;
   color: #000000;
   padding: 10px;
   border: none;
   cursor: pointer;
   width: 48%;
+  font-size: 16px;
   background-color: #ccc;
-  margin: 0 20px 0 45px;
-  text-align: center;
-  text-decoration: none;
 }
 
-.boton_cancelar a{
-  text-decoration: none;
-  color: #000;
+.body_registrar_usuario {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  /* Color de fondo */
 }
+
+.register-container {
+  width: 80%;
+  margin: 10% auto;
+  /* Alinea en el centro */
+  display: flex;
+}
+
+.register-image {
+  flex: 1;
+  background-color: #D9D9D9;
+  /* Color de fondo de la imagen */
+}
+
+.register-form {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  /* Color de fondo del formulario */
+}
+
 
 .formulario-group {
   margin-bottom: 15px;
@@ -524,6 +533,7 @@ img.carrusel_img {
   padding: 10px;
   box-sizing: border-box;
   margin-bottom: 10px;
+  /* Ajusta el espacio entre los elementos */
 }
 
 
@@ -577,6 +587,11 @@ section {
 }
 
 
+
+/* ----------------------------------------------------------- */
+
+
+
 #ropa-main-2 {
   width: 100%;
   position: relative;
@@ -623,17 +638,94 @@ section {
 }
 
 
+/* .flip-card {
+      background-color: transparent;
+      width: 245px;
+      height: 270px;
+      perspective: 1000px;
+    }
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 5px;
+      
+      backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+      background-color: #ffffff;
+      border: 4px solid #000000;
+    }
+    
+    .profile-image {
+      background-color: transparent;
+      border: none;
+      margin-top: 15px;
+      border-radius: 5em;
+      width: 120px;
+      height: 120px;
+      margin-left: 50px;
+    }
+    
+    
+    .titulo-ropa {
+      margin-top: 15px;
+      font-size: 21px;
+      color: #000000;
+      font-weight: bold;
+    }
+    
+    .flip-card-back {
+      background-color: #ffffff;
+      border: 4px solid #000000;
+      transform: rotateY(180deg);
+      padding: 11px;
+    }
+    
+    .description {
+      margin-top: 10px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: rgb(0, 0, 0)
+    }
+    
+
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+     */
+
+
+
+
 #footer {
   background-color: #000;
+  /* Color de fondo del footer */
   text-align: center;
+  /* Centrar el contenido */
   padding: 20px;
+  /* Espaciado interior */
   color: #fff;
 }
 
-
+/* Estilo para el contenido dentro del footer */
 .footer-content {
   max-width: 600px;
+  /* Ancho máximo del contenido */
   margin: 0 auto;
+  /* Centrar el contenido horizontalmente */
 }
 
 .footer-content h6 {
@@ -651,310 +743,98 @@ section {
   padding: 0px 4px 0px 4px;
 }
 
-.confirmar_registro {
-            
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f8f9fa;
+
+   /* * {
+	margin: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+	font-family: "Figtree", sans-serif;
+}
+
+body {
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	background: #c8c4cf;
+} */
+h2{
+    color:#fff;
+} 
+
+.container_box {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 1em;
+	width: 800px;
+	height: 500px;
+	transition: all 400ms;
+}
+
+.container_box:hover .box {
+	filter: grayscale(100%) opacity(24%);
+} 
+
+.box {
+	position: relative;
+	background: var(--img) center center;
+	background-size: cover;
+	transition: all 400ms;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container_box .box:hover {
+	filter: grayscale(0%) opacity(100%);
+}
+
+.container_box:has(.box-1:hover) {
+	grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+
+.container_box:has(.box-2:hover) {
+	grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+
+.container_box:has(.box-3:hover) {
+	grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+}
+
+.container_box:has(.box-4:hover) {
+	grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+}
+
+.container_box:has(.box-5:hover) {
+	grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+}
+
+.box:nth-child(odd) {
+	transform: translateY(-16px);
+}
+
+.box:nth-child(even) {
+	transform: translateY(16px);
+}
+
+.box::after {
+	content: attr(data-text);
+	position: absolute;
+	bottom: 20px;
+	background: #000 ;
+	color: #fff;
+	padding: 10px 10px 10px 14px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	transform: translateY(60px);
+	opacity: 0;
+	transition: all 400ms;
+}
+
+.box:hover::after {
+	transform: translateY(0);
+	opacity: 1;
+	transition-delay: 400ms;
 }
 
 
-
-.confirmar_registro h2 {
-  font-size: 30px;
-  margin-top: 75px;
-  margin-bottom: 14px;
-  color: #000;
-  text-align: center;
-          }
-
-.confirmar_registro h3{
-  font-size: 28px;
-}
-
-.confirmar_registro a .logo {
-  text-align: center;
-  font-size: 24px;
-  margin-top: 28px;
-  }
-
-
-
-.confirmar_registro .close-button{
-text-align: right;
-}     
-
-
-.confirmar_registro img{
-position: relative;
-height: 29px;
-width: 28px;
-text-align: right;
-}
-
-
-.confirmar_registro img.verificado {
-  display: block;
-  margin: auto;
-}
-
-
-.confirmar_registro .verificado{
-
-position:relative;
-height: 45px;
-width: 45px;
-text-align: center;
-}
-
-
-.confirmar_registro .account .block {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(222, 222, 222);
-  padding: 30px;
-  max-width: 500px;
-  width: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  
-}
-
-.confirmar_registro .form-group {
-  margin-bottom: 20px;
-}
-
-.confirmar_registro .account .block form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.confirmar_registro .btn-main {
-background-color: rgb(93, 19, 87);
-color: #fff;
-padding: 16px;
-border: none;
-cursor: pointer;
-font-size: 16px;
-text-decoration: none;
-margin-top: 85px;
-}
-
-
-.confirmar_registro a{
-text-decoration: none;
-color: #000;
-text-align: center;
-}
-
-.recuperar_contraseña {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f8f9fa; 
-}
-
-
-
-.recuperar_contraseña h2 {
-  font-size: 30px;
-  margin-top: 53px;
-  margin-bottom: 48px;
-  color: #000;
-  text-align: center;
-          }
-
-.recuperar_contraseña h3{
-  font-size: 28px;
-}
-
-.recuperar_contraseña a .logo {
-  text-align: center;
-  font-size: 24px;
-  margin-top: 28px;
-  }
-
-
-
-.recuperar_contraseña .close-button{
-text-align: right;
-}     
-
-
-
-.recuperar_contraseña img{
-position: relative;
-height: 29px;
-width: 28px;
-text-align: right;
-}
-
-
-.recuperar_contraseña .account .block {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(222, 222, 222);
-  padding: 30px;
-  max-width: 500px;
-  width: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  
-}
-
-
-
-.recuperar_contraseña p {
-text-align: left;
-  color: #777;
-  font-size: 16px;
-  margin: 0 0 44px;
-}
-
-.recuperar_contraseña .form-group {
-  margin-bottom: 20px;
-}
-
-.recuperar_contraseña .account .block form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.recuperar_contraseña input[type="email"] {
-width: 100%;
-  box-sizing: border-box;
-  padding: 10px;
-  margin-bottom: 15px;
-}
-
-.recuperar_contraseña .btn-main {
-background-color: rgb(93, 19, 87);
-color: #ffffff;
-padding: 16px;
-border: none;
-cursor: pointer;
-font-size: 16px;
-text-decoration: none;
-margin-top: 41px;
-}
-
-.recuperar_contraseña .mt-20 {
-  margin-top: 22px;
-  text-align: center;
-}
-
-
-.recuperar_contraseña a{
-text-decoration: none;
-color: #000;
-text-align: center;
-}
-
-.confirmar_registro {
-            
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f8f9fa;
-}
-
-
-
-.confirmar_registro  h2 {
-  font-size: 30px;
-  margin-top: 75px;
-  margin-bottom: 14px;
-  color: #000;
-  text-align: center;
-          }
-
-.confirmar_registro h3{
-  font-size: 28px;
-}
-
-.confirmar_registro a .logo {
-  text-align: center;
-  font-size: 24px;
-  margin-top: 28px;
-  }
-
-
-
-.confirmar_registro .close-button{
-text-align: right;
-}     
-
-
-.confirmar_registro img{
-position: relative;
-height: 29px;
-width: 28px;
-text-align: right;
-}
-
-.confirmar_registro img.verificado {
-  display: block;
-  margin: auto;
-}
-
-.confirmar_registro .verificado{
-position:relative;
-height: 45px;
-width: 45px;
-text-align: center;
-}
-
-
-.confirmar_registro .account .block {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(222, 222, 222);
-  padding: 30px;
-  max-width: 500px;
-  width: 100%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  
-}
-
-.confirmar_registro .form-group {
-  margin-bottom: 20px;
-}
-
-.confirmar_registro .account .block form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.confirmar_registro .btn-main {
-background-color: rgb(93, 19, 87);
-color: #fff;
-padding: 16px;
-border: none;
-cursor: pointer;
-font-size: 16px;
-text-decoration: none;
-margin-top: 85px;
-}
-
-
-.confirmar_registro a{
-text-decoration: none;
-color: #000;
-text-align: center;
-}
-
-
-.form-group img{
-position: absolute;
-margin: 5px 8px 5px 8px;
- 
- 
-}

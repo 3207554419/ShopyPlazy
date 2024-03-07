@@ -1,6 +1,6 @@
 <?php
-include "../Admin/conexion.php";
-                                                                                                                                                                                                                                                        
+include "../sistema/conexion.php";
+
     if(!empty($_POST))
     {
         $alert = "";
@@ -42,7 +42,7 @@ include "../Admin/conexion.php";
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/sistema/css/style.css">
     <?php include "includes/scripts.php"; ?>
 	<title>Registro Usuario</title>
 </head>

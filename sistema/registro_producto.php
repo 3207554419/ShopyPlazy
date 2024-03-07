@@ -1,5 +1,5 @@
 <?php
-include "../Admin/conexion.php";
+include "../sistema/conexion.php";
 
 if (!empty($_POST)) {
     $alert = "";
@@ -56,13 +56,13 @@ if (!empty($_POST)) {
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../public/Admin/css/style.css">
-    <?php include "../Admin/includes/scripts.php"; ?>
+    <link rel="stylesheet" href="/sistema/css/style.css">
+    <?php include "../sistema/includes/scripts.php"; ?>
     <title>Registro Producto</title>
 </head>
 
 <body>
-    <?php include "../Admin/includes/header.php"; ?>
+    <?php include "../sistema/includes/header.php"; ?>
     <section id="container">
 
         <div class="form_register">
@@ -99,7 +99,7 @@ if (!empty($_POST)) {
             </form>
         </div>
     </section>
-    <?php include "../Admin/includes/footer.php"; ?>
+    <?php include "../sistema/includes/footer.php"; ?>
 </body>
 
 </html>

@@ -4,7 +4,7 @@ $alert = "";
 session_start();
 
 if (!empty($_SESSION['active'])) {
-    header('location: Admin/');
+    header('location: sistema/');
 } else {
 
     if (!empty($_POST)) {
@@ -12,7 +12,7 @@ if (!empty($_SESSION['active'])) {
             $alert = 'Ingrese su usuario y su clave';
         } else {
 
-            require_once "../Admin/conexion.php";
+            require_once "../sistema/conexion.php";
 
             $user = mysqli_real_escape_string($conection, $_POST['usuario']);
             $pass = md5(mysqli_real_escape_string($conection, $_POST['clave']));
@@ -36,7 +36,7 @@ if (!empty($_SESSION['active'])) {
                 $_SESSION['email'] = $data['Correo'];
                 $_SESSION['password'] = $data['Clave'];
 
-                header('location: Admin/');
+                header('location: sistema/');
             } else {
                 $alert = 'El usuario o la clave son incorrectos';
                 session_destroy();
@@ -49,8 +49,8 @@ if (!empty($_SESSION['active'])) {
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" href="../public/img/logo.png" type="image/png">
-<link rel="stylesheet" href="/view/Admin/css/style.css">
+<link rel="icon" href="../img/logo.png" type="image/png">
+<link rel="stylesheet" href="/sistema/css/style.css">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,13 +64,13 @@ if (!empty($_SESSION['active'])) {
 
         <form action="" method="post">
             <h3>Iniciar Sesión</h3>
-            <img src="/public/img/logo.png" alt="Login">
+            <img src="../img/logo.png" alt="Login">
 
             <input type="text" name="usuario" placeholder="Usuario">
             <input type="password" name="clave" placeholder="Contraseña">
             <div class="alert"><?php echo isset($alert) ? $alert : ''; ?></div>
             <input type="submit" value="Ingresar">
-            <center><a href="#">Cancelar</a></center>
+            <center><a href="../interfaz_usuario/iniciar_sesion.php">Cancelar</a></center>
            
         </form>
 
