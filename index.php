@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shopzy Place | E-commerce </title>
-  <link rel="stylesheet" href="public/css/styles1.css">
+  <link rel="stylesheet" href="/public/css/styles1.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="icon" href="public/img/logo.png" type="image/png">
@@ -52,7 +52,7 @@
             <button class="btn boton_header" type="submit">Buscar</button>
             <div class="form-inline">
               <a href="#"><img src="public/img/carrito-de-compras.png" alt="Carrito de Compras" class="icono-pequeno"></a>
-              <a href="view/iniciar_sesion.php"><img src="public/img/usuario img.png" alt="Perfil" class="icono-pequeno"></a>
+              <a href="/view/Clien/iniciar_sesion.php"><img src="public/img/usuario img.png" alt="Perfil" class="icono-pequeno"></a>
             </div>
           </form>
         </div>

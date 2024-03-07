@@ -42,7 +42,7 @@ include "../Admin/conexion.php";
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="../Admin/css/style.css">
+    <link rel="stylesheet" href="/public/css/styles1.css">
     <?php include "includes/scripts.php"; ?>
 	<title>Registro Usuario</title>
 </head>

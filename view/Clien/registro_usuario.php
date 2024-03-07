@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../public/css/styles1.css"> 
+  <link rel="stylesheet" href="/public/css/styles1.css"> 
   <link rel="icon" href="../img/logo.png" type="image/png">
   <title>Registro Usuario</title>
 </head>
@@ -11,15 +11,15 @@
 
 <div class="register-container">
   <div class="register-image">
-    <img src="../public/img/iniciosesionnnn.jpg" alt="">
+    <img src="/public/img/iniciosesionnnn.jpg" alt="">
   </div>
   <div class="login-form">
     <div class="close-button">
-      <a href="../interfaz_usuario/iniciar_sesion.php"><img src="../public/img/cerrar X.png" alt=""></a>
+      <a href="/view/Clien/iniciar_sesion.php"><img src="/public/img/cerrar X.png" alt=""></a>
     </div>
   <div class="register-form">
     <div class="logo-and-title">
-      <img src="../public/img/logo.png" alt="" class="register-logo">
+      <img src="/public/img/logo.png" alt="" class="register-logo">
       <h2>Registro Usuario</h2>
     </div>
     <form class="form_registrar_usuario">

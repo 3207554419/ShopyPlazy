@@ -1,5 +1,5 @@
 <?php
-include "../sistema/conexion.php";
+include "../Admin/conexion.php";
 
     if(!empty($_POST))
     {
@@ -91,7 +91,7 @@ include "../sistema/conexion.php";
 <head>
 	<meta charset="UTF-8">
     <?php include "includes/scripts.php"; ?>
-    <link rel="stylesheet" href="/sistema/css/style.css">
+    <link rel="stylesheet" href="../../public/css/styles1.css">
 	<title>Actualizar Usuario</title>
 </head>
 <body>

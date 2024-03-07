@@ -1,6 +1,6 @@
 <?php
 
-include "../sistema/conexion.php";
+include "../../view/Admin/conexion.php";
 
 if(!empty($_POST))
 {
