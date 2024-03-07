@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="../Admin/css/style.css">
+	<link rel="stylesheet" href="/view/Admin/css/style.css
+	
+	">
 	<link rel="icon" href="../img/logo.png" type="image/png">
     <?php include "includes/scripts.php"; ?>
 	<title>Sistema Administrativo</title>
