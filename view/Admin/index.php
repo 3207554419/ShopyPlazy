@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="/view/Admin/css/style.css
 	
 	">
-	<link rel="icon" href="../img/logo.png" type="image/png">
+	<link rel="icon" href="/img/logo.png" type="image/png">
     <?php include "includes/scripts.php"; ?>
 	<title>Sistema Administrativo</title>
 </head>

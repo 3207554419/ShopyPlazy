@@ -50,7 +50,7 @@ if (!empty($_SESSION['active'])) {
 <!DOCTYPE html>
 <html lang="en">
 <link rel="icon" href="../public/img/logo.png" type="image/png">
-<link rel="stylesheet" href="../Admin/css/style.css">
+<link rel="stylesheet" href="/view/Admin/css/style.css">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,7 +64,7 @@ if (!empty($_SESSION['active'])) {
 
         <form action="" method="post">
             <h3>Iniciar Sesión</h3>
-            <img src="../public/img/logo.png" alt="Login">
+            <img src="/public/img/logo.png" alt="Login">
 
             <input type="text" name="usuario" placeholder="Usuario">
             <input type="password" name="clave" placeholder="Contraseña">
